@@ -1,6 +1,3 @@
-import '/src/style.css'
-import { Pose } from '@mediapipe/pose'
-import { Camera } from '@mediapipe/camera_utils'
 
 class FlappyBirdGame {
   constructor() {
