@@ -36,15 +36,15 @@ class FlappyBirdGame {
     this.handRaiseCooldown = 250 // milliseconds
     // PNG assets from public/images
     this.backgroundImg = new Image();
-    this.backgroundImg.src = '/images/background-day.png';
+    this.backgroundImg.src = '/assets/background-day.png';
     this.baseImg = new Image();
-    this.baseImg.src = '/images/base.png';
+    this.baseImg.src = '/assets/base.png';
     this.birdImage = new Image();
-    this.birdImage.src = '/images/bird.png';
+    this.birdImage.src = '/assets/bird.png';
     this.pipeTopImg = new Image();
-    this.pipeTopImg.src = '/images/pipe-green.png';
+    this.pipeTopImg.src = '/assets/pipe-green.png';
     this.pipeBottomImg = new Image();
-    this.pipeBottomImg.src = '/images/pipe-green.png';
+    this.pipeBottomImg.src = '/assets/pipe-green.png';
     this.init()
   }
   loadHighScore() {
