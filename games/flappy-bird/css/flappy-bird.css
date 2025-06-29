@@ -1,3 +1,4 @@
 /* Flappy Bird Gesture Game Styles */
 @import url('/src/style.css');
+@import url('instructions.css');
 #app { margin-top: 40px; }

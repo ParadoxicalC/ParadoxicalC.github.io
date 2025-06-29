@@ -6,30 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rikus - Fun Games</title>
     <link rel="stylesheet" href="/src/style.css" />
-    <style>
-      body { font-family: 'Segoe UI', Arial, sans-serif; background: #f7f7fa; margin: 0; }
-      .header { text-align: center; padding: 2rem 0 1rem; }
-      .header h1 { font-size: 3rem; margin: 0; color: #2d2d72; }
-      .games-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin: 2rem 0; }
-      .game-card { background: #fff; border-radius: 16px; box-shadow: 0 2px 12px #0001; width: 260px; text-align: center; padding: 2rem 1rem; transition: transform 0.2s; cursor: pointer; text-decoration: none; color: inherit; }
-      .game-card:hover { transform: translateY(-8px) scale(1.03); box-shadow: 0 6px 24px #0002; }
-      .game-card img { width: 80px; height: 80px; margin-bottom: 1rem; }
-      .game-card h2 { margin: 0.5rem 0 0.2rem; font-size: 1.3rem; }
-      .game-card p { color: #555; font-size: 1rem; }
-    </style>
+    <link rel="stylesheet" href="/src/css/home.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="header">
+    <div class="bg-bubbles">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="hero">
       <h1>Rikus</h1>
       <p>Fun, simple games to play in your browser!</p>
     </div>
     <div class="games-list">
       <a class="game-card" href="flappy-bird.html">
+        <span class="badge">NEW</span>
         <img src="/public/images/flappy.png" alt="Flappy Bird Gesture" />
-        <h2>Flappy Bird Gesture</h2>
+        <h2>Flappy Bird: Hand Control</h2>
         <p>Play Flappy Bird using your webcam and hand gestures!</p>
       </a>
       <!-- Add more games here in the future -->
+    </div>
+    <div class="footer">
+      &copy; 2025 Rikus Games &mdash; Made with ❤️ for fun! | <a href="https://github.com/ParadoxicalC" style="color:#f7b42c;text-decoration:underline;">GitHub</a>
     </div>
   </body>
 </html>

@@ -1,4 +1,3 @@
-
 class FlappyBirdGame {
   constructor() {
     this.canvas = null
@@ -34,17 +33,17 @@ class FlappyBirdGame {
     this.isHandRaised = false
     this.lastHandRaiseTime = 0
     this.handRaiseCooldown = 250 // milliseconds
-    // PNG assets from public/images
+    // PNG assets from games/flappy-bird/assets
     this.backgroundImg = new Image();
-    this.backgroundImg.src = '/images/background-day.png';
+    this.backgroundImg.src = 'games/flappy-bird/assets/background-day.png';
     this.baseImg = new Image();
-    this.baseImg.src = '/images/base.png';
+    this.baseImg.src = 'games/flappy-bird/assets/base.png';
     this.birdImage = new Image();
-    this.birdImage.src = '/images/bird.png';
+    this.birdImage.src = 'games/flappy-bird/assets/bird.png';
     this.pipeTopImg = new Image();
-    this.pipeTopImg.src = '/images/pipe-green.png';
+    this.pipeTopImg.src = 'games/flappy-bird/assets/pipe-green.png';
     this.pipeBottomImg = new Image();
-    this.pipeBottomImg.src = '/images/pipe-green.png';
+    this.pipeBottomImg.src = 'games/flappy-bird/assets/pipe-green.png';
     this.init()
   }
   loadHighScore() {
@@ -79,8 +78,9 @@ class FlappyBirdGame {
           <div id="score">Score: 0</div>
           <div id="high-score">High Score: ${this.highScore}</div>
           <div id="instructions">
-            <p>Raise your hand above your shoulder to jump!</p>
-            <p>Super easy - just lift one hand up!</p>
+            <p>Raise either hand above your shoulder (into the camera view) to start the game and make the bird jump.</p>
+            <p>Lower your hand, then raise it again for each new jump. Holding your hand up will not trigger repeated jumps.</p>
+            <p>Avoid the pipes and ground. After a game over, lower your hand and raise it again to restart!</p>
             <p id="status">Initializing camera...</p>
           </div>
         </div>

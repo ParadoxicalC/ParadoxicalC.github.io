@@ -1,0 +1,39 @@
+/* Flappy Bird Instructions Box Styles */
+#instructions {
+  background: rgba(255, 255, 255, 0.97);
+  padding: 22px 28px;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(45,45,114,0.10), 0 2px 8px 0 rgba(0,0,0,0.08);
+  max-width: 340px;
+  border: 2px solid #f7b42c;
+  position: relative;
+  transition: box-shadow 0.2s;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+#instructions:before {
+  content: "How to Play";
+  position: absolute;
+  top: -18px;
+  left: 18px;
+  background: #f7b42c;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 2px 16px;
+  border-radius: 12px 12px 12px 0;
+  box-shadow: 0 2px 8px #0001;
+  letter-spacing: 1px;
+}
+#instructions p {
+  margin: 10px 0;
+  font-size: 1.08rem;
+  color: #2d2d72;
+  line-height: 1.5;
+  text-align: left;
+}
+#status {
+  font-weight: bold;
+  color: #FF6347 !important;
+  margin-top: 10px;
+  font-size: 1.08rem;
+}

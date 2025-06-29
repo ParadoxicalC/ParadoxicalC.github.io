@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Flappy Bird Gesture - Rikus</title>
   <link rel="stylesheet" href="/src/style.css" />
+  <link rel="stylesheet" href="/games/flappy-bird/css/instructions.css" />
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose/pose.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.min.js"></script>
 
@@ -12,6 +13,24 @@
 <body>
   <div id="app"></div>
   <script type="module" src="games/flappy-bird/js/flappy-bird.js"></script>
-  <a href="/index.html" style="position:fixed;top:20px;left:20px;text-decoration:none;color:#2d2d72;font-weight:bold;font-size:1.1rem;background:#fff3;padding:6px 16px;border-radius:8px;">← Back to Rikus</a>
+  <a href="/index.html" style="
+    position: fixed;
+    bottom: 32px;
+    left: 32px;
+    z-index: 1000;
+    text-decoration: none;
+    color: #2d2d72;
+    font-weight: bold;
+    font-size: 1rem;
+    background: #fff9;
+    padding: 10px 18px;
+    border-radius: 24px;
+    box-shadow: 0 2px 8px #0001;
+    opacity: 0.7;
+    transition: all 0.2s;
+  "
+  onmouseover="this.style.opacity='1';this.style.background='#f7b42c';this.style.color='#fff';this.style.boxShadow='0 4px 16px #2d2d7240';"
+  onmouseout="this.style.opacity='0.7';this.style.background='#fff9';this.style.color='#2d2d72';this.style.boxShadow='0 2px 8px #0001';"
+  >← Back to Rikus</a>
 </body>
 </html>
