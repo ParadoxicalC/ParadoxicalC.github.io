@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #87CEEB, #98FB98);
+  overflow: hidden;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#game-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#game-canvas {
+  border: 4px solid #2F4F4F;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  background: #87CEEB;
+}
+
+#webcam {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: 3px solid #FF6347;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+#pose-canvas {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: 3px solid #FF6347;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 11;
+}
+
+#game-ui {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+#score {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2F4F4F;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
+}
+
+#instructions {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+}
+
+#instructions p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #2F4F4F;
+  line-height: 1.4;
+}
+
+#status {
+  font-weight: bold;
+  color: #FF6347 !important;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  #game-canvas {
+    width: 90vw;
+    height: auto;
+  }
+  
+  #webcam, #pose-canvas {
+    width: 150px;
+    height: 112px;
+  }
+  
+  #instructions {
+    max-width: 200px;
+    font-size: 12px;
+  }
+}
